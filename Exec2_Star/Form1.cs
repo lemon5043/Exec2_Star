@@ -22,7 +22,6 @@ namespace Exec2_Star
 			int? rows = GetRows();
 			if (!rows.HasValue)
 			{
-				MessageBox.Show("請輸入0-10的整數");
 				return;
 			}
 
@@ -36,7 +35,6 @@ namespace Exec2_Star
 			int? rows = GetRows();
 			if (!rows.HasValue)
 			{
-				MessageBox.Show("請輸入0-10的整數");
 				return;
 			}
 
@@ -49,7 +47,6 @@ namespace Exec2_Star
 			int? rows = GetRows();
 			if (!rows.HasValue)
 			{
-				MessageBox.Show("請輸入0-10的整數");
 				return;
 			}
 
@@ -64,6 +61,7 @@ namespace Exec2_Star
 
 			if (!isInt || result < 0 || result > 10)
 			{
+				MessageBox.Show("請輸入0-10的整數");
 				return null;
 			}
 			return result;
